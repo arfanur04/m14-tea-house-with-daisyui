@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +11,11 @@
 			type="text/css"
 		/>
 		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- font awesome -->
+		<script
+			src="https://kit.fontawesome.com/e61df7a87d.js"
+			crossorigin="anonymous"
+		></script>
 		<!-- tailwind custom color -->
 		<script>
 			tailwind.config = {
@@ -27,8 +32,42 @@
 		<link rel="stylesheet" href="styles/styles.css" />
 	</head>
 	<body class="font-manrope">
-		<header></header>
-		<main></main>
+		<header class="md:container mx-auto">
+			<div class="hero">
+				<div class="hero-content flex-col lg:flex-row">
+					<div>
+						<h1 class="text-7xl font-extrabold">
+							It's good <br />
+							tea time at The <br />
+							Tea House
+						</h1>
+						<p class="py-6">
+							Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+							Your Taste Buds.
+						</p>
+						<button class="btn btn-primary">Explore More</button>
+					</div>
+					<div>
+						<img src="/images/banner.png" class="max-w-sm" />
+						<!-- Ratings badge -->
+
+						<div
+							class="flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60 rounded-lg -mt-16"
+						>
+							<i class="fa-solid fa-star text-3xl text-amber-400"></i>
+							<div>
+								<h3 class="text-3xl font-extrabold">5.00</h3>
+								<p class="text-base font-semibold">Trust Pilot Ratings</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="md:container mx-auto"></main>
 		<footer></footer>
+
+		<!-- scroll to bottom -->
+		<script src="js/bottom.js"></script>
 	</body>
 </html>
